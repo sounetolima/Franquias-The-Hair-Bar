@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Franquia The Hair Bar 2026 | Um negócio de beleza sem hora marcada</title>
+<meta name="description" content="Seja franqueado The Hair Bar Escovaria: serviços express, preço fixo e experiência bistrô. Investimento a partir de R$ 279 mil, lucratividade de 13% a 25% e payback a partir de 13 meses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://franquiasthehairbar2026.netlify.app/">
+<meta property="og:title" content="Franquia The Hair Bar 2026 — um negócio de beleza sem hora marcada">
+<meta property="og:description" content="Serviços express, preço fixo e um bar dentro do salão. Veja o modelo, os formatos de unidade e simule o resultado.">
+<meta property="og:image" content="https://franquiasthehairbar2026.netlify.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#231F20">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300;font-display:swap;src:url(fonts/jost-latin-300-normal.woff2) format("woff2")}
+@font-face{font-family:Jost;font-weight:400;font-display:swap;src:url(fonts/jost-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Jost;font-weight:500;font-display:swap;src:url(fonts/jost-latin-500-normal.woff2) format("woff2")}
+:root{
+  --grafite:#231F20;--grafite-2:#2D2829;--linha-escura:#433C3E;
+  --magenta:#EA0A8C;--magenta-texto:#C4007B;--rosa-claro:#FFD6EC;
+  --nevoa:#F6F1F3;--branco:#FFFFFF;--pedra:#6F6769;--pedra-clara:#B7AFB1;
+  --raio:18px;--max:1180px;--gutter:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Jost,"Futura","Century Gothic",system-ui,sans-serif;font-weight:400;font-size:18px;line-height:1.6;color:var(--grafite);background:var(--branco);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--magenta);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+section{padding:clamp(72px,11vw,136px) 0;position:relative}
+.escuro{background:var(--grafite);color:var(--branco)}
+.nevoa{background:var(--nevoa)}
+h1,h2{font-weight:300;letter-spacing:-.01em}
+h1{font-size:clamp(46px,6.6vw,96px);line-height:1}
+h2{font-size:clamp(32px,4.6vw,58px);line-height:1.06;max-width:20ch}
+h3{font-size:22px;font-weight:500;line-height:1.3}
+.lead{font-size:clamp(19px,1.6vw,22px);line-height:1.55;max-width:58ch;margin-top:24px;color:var(--pedra)}
+.escuro .lead{color:#CFC8CA}
+.nota{font-size:14px;line-height:1.5;color:var(--pedra);max-width:72ch}
+.escuro .nota{color:#A9A1A3}
+sup a{text-decoration:none;color:var(--magenta-texto);font-size:.7em;padding:0 2px}
+.escuro sup a{color:var(--rosa-claro)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;font:500 17px/1 Jost,system-ui,sans-serif;padding:17px 26px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primario{background:var(--magenta);color:#fff}
+.btn-primario:hover{background:#C9077A}
+.btn-linha{border-color:currentColor;color:inherit;background:transparent}
+.btn-linha:hover{background:rgba(234,10,140,.1)}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto;z-index:20;transition:background .3s,box-shadow .3s}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.topo .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.topo .marca img{width:40px;height:40px;border-radius:50%;background:#fff}
+.topo .marca span{font-weight:500;font-size:15px;letter-spacing:.02em}
+.topo .btn{padding:12px 20px;font-size:15px}
+.topo.solido{background:rgba(35,31,32,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--linha-escura)}
+.progresso{position:absolute;left:0;bottom:-2px;height:2px;background:var(--magenta);width:0;box-shadow:0 0 10px var(--magenta)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.45fr .55fr;gap:clamp(32px,6vw,88px);align-items:center;width:100%}
+.hero .logo{width:min(190px,48vw);margin-bottom:40px}
+.hero h1 .riscado{position:relative;white-space:nowrap;color:#D9D2D4}
+.hero h1 .riscado::after{content:"";position:absolute;left:-2%;right:-2%;top:56%;height:.065em;min-height:4px;background:var(--magenta);border-radius:4px;box-shadow:0 0 14px var(--magenta),0 0 30px rgba(234,10,140,.6);transform-origin:left;transform:scaleX(0);animation:risco 1.1s .5s cubic-bezier(.6,.05,.25,1) forwards}
+@keyframes risco{to{transform:scaleX(1)}}
+.arco{border-radius:999px 999px var(--raio) var(--raio);overflow:hidden;position:relative}
+.arco img{width:100%;height:100%;object-fit:cover}
+.hero .arco{aspect-ratio:3/4.3;box-shadow:0 0 0 1.5px rgba(234,10,140,.55),0 0 60px rgba(234,10,140,.28)}
+.fatos{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 40px;margin-top:52px;padding-top:28px;border-top:1px solid var(--linha-escura)}
+.fatos dt{font-size:14px;color:#A9A1A3}
+.fatos dd{white-space:nowrap;font-size:clamp(22px,2.2vw,28px);font-weight:400;line-height:1.2;margin-top:4px}
+
+/* mercado */
+.grade-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,96px);align-items:start}
+.numeros{display:grid;gap:44px;margin-top:8px}
+.numero strong{display:block;font-weight:300;font-size:clamp(56px,7vw,92px);line-height:1;color:var(--magenta-texto);letter-spacing:-.02em}
+.numero p{margin-top:12px;max-width:40ch}
+.barras{margin-top:48px;display:grid;gap:22px}
+.barras h3{font-size:18px;margin-bottom:6px}
+.barra{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;font-size:16px}
+.barra .trilho{grid-column:1/-1;height:14px;background:#E7DDE1;border-radius:999px;overflow:hidden}
+.barra .trilho i{display:block;height:100%;border-radius:999px;background:var(--pedra-clara)}
+.barra.destaque .trilho i{background:var(--magenta)}
+.barra b{font-weight:500}
+
+/* concorrência */
+.waffle{display:grid;grid-template-columns:repeat(10,1fr);gap:7px;max-width:380px}
+.waffle i{aspect-ratio:1;border-radius:50%;background:#4E4648}
+.waffle i.me{background:#9C9395}
+.waffle i.epp{background:var(--magenta);box-shadow:0 0 10px var(--magenta)}
+.legenda{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15px;color:#CFC8CA}
+.legenda span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:8px;vertical-align:0;background:#4E4648}
+.legenda .me::before{background:#9C9395}.legenda .epp::before{background:var(--magenta)}
+.conclusao{margin-top:36px;padding-left:22px;border-left:3px solid var(--magenta);font-size:clamp(20px,1.8vw,24px);line-height:1.45;max-width:36ch}
+
+/* dores x modelo */
+.comparativo{margin-top:56px;border-top:1px solid #E2D8DC}
+.comparativo .linha{display:grid;grid-template-columns:1fr 1.25fr;gap:24px 56px;padding:28px 0;border-bottom:1px solid #E2D8DC}
+.comparativo .cabeca{padding:0 0 14px;border-bottom:none;font-size:15px;color:var(--pedra);font-weight:500}
+.comparativo .dor{color:var(--pedra);text-decoration:line-through;text-decoration-color:rgba(234,10,140,.55);text-decoration-thickness:2px}
+.comparativo .resposta strong{display:block;font-weight:500;font-size:20px;margin-bottom:4px}
+
+/* validação */
+.validacao .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,96px);align-items:center}
+.selo{aspect-ratio:1;max-width:340px;border-radius:50%;border:1.5px solid var(--magenta);box-shadow:0 0 50px rgba(234,10,140,.25),inset 0 0 40px rgba(234,10,140,.15);display:grid;place-content:center;text-align:center;padding:30px}
+.selo strong{font-weight:300;font-size:clamp(72px,9vw,120px);line-height:.9}
+.selo span{font-size:17px;color:#CFC8CA;margin-top:12px;display:block}
+
+/* quem */
+.quem .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,7vw,96px);align-items:center}
+.quem .arco{aspect-ratio:3/4}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px;padding-top:32px;border-top:1px solid #E2D8DC}
+.valores h3{font-size:19px}
+.valores p{font-size:16px;color:var(--pedra);margin-top:6px}
+
+/* receitas */
+.receitas{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(32px,6vw,80px);margin-top:56px}
+.servicos{list-style:none;display:grid;gap:0;border-top:1px solid #E2D8DC}
+.servicos li{padding:16px 0;border-bottom:1px solid #E2D8DC;font-size:20px;display:flex;justify-content:space-between;gap:16px}
+.servicos li small{font-size:14px;color:var(--pedra);align-self:center;text-align:right}
+.produtos{background:var(--nevoa);border-radius:var(--raio);padding:clamp(24px,4vw,44px)}
+.produtos p{color:var(--pedra);max-width:44ch;margin-top:8px}
+.prateleira{display:grid;grid-template-columns:repeat(6,1fr);align-items:end;gap:10px;margin-top:28px}
+.prateleira figure{text-align:center}
+.prateleira img{height:clamp(96px,13vw,170px);width:auto;max-width:100%;margin:0 auto;object-fit:contain}
+.prateleira img.p-sm{height:clamp(72px,9.5vw,124px)}
+.prateleira figcaption{font-size:13px;line-height:1.3;color:var(--pedra);margin-top:10px}
+
+/* formatos */
+.formatos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;align-items:stretch}
+.formato{border:1px solid var(--linha-escura);border-radius:var(--raio);padding:32px 28px;display:flex;flex-direction:column;background:var(--grafite-2)}
+.formato.recomendado{border-color:var(--magenta);box-shadow:0 0 0 1px var(--magenta),0 0 50px rgba(234,10,140,.18)}
+.formato .tag{display:inline-block;align-self:flex-start;font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;background:#3A3436;color:#E9E3E5;margin-bottom:22px}
+.formato.recomendado .tag{background:var(--magenta);color:#fff}
+.formato h3{font-size:28px;font-weight:400}
+.formato .area{color:#A9A1A3;font-size:16px}
+.formato dl{margin-top:24px;display:grid;gap:0}
+.formato dl div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--linha-escura);font-size:16px}
+.formato dt{color:#BDB5B7}
+.formato dd{font-weight:500;text-align:right}
+.formato .inclui{margin:20px 0 28px;font-size:15px;color:#BDB5B7}
+.formato .btn{margin-top:auto;justify-content:center}
+
+/* simulador */
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,72px);margin-top:48px;align-items:start}
+.seletor{display:inline-grid;grid-template-columns:repeat(3,auto);background:#fff;border:1px solid #E2D8DC;border-radius:999px;padding:5px;gap:4px}
+.seletor button{all:unset;cursor:pointer;padding:11px 22px;border-radius:999px;font-weight:500;font-size:16px;color:var(--pedra)}
+.seletor button[aria-pressed="true"]{background:var(--grafite);color:#fff}
+.seletor button:focus-visible{outline:3px solid var(--magenta)}
+.controle{margin-top:36px}
+.controle label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:16px;color:var(--pedra)}
+.controle output{font-size:clamp(28px,3vw,38px);color:var(--grafite);font-weight:400}
+input[type=range]{width:100%;margin-top:14px;accent-color:var(--magenta);height:28px}
+.escala{display:flex;justify-content:space-between;font-size:13px;color:var(--pedra)}
+.resultado{background:var(--grafite);color:#fff;border-radius:var(--raio);padding:clamp(26px,4vw,40px)}
+.resultado .principal span{font-size:16px;color:#BDB5B7}
+.resultado .principal strong{display:block;font-weight:300;font-size:clamp(48px,6vw,72px);line-height:1.05;margin-top:4px}
+.resultado dl{margin-top:24px}
+.resultado dl div{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid var(--linha-escura);font-size:16px}
+.resultado dt{color:#BDB5B7}.resultado dd{font-weight:500;text-align:right;white-space:nowrap}
+.resultado .btn{width:100%;justify-content:center;margin-top:24px}
+
+/* suporte */
+.tabela-suporte{margin-top:56px;width:100%;border-collapse:collapse}
+.tabela-suporte th{text-align:left;font-weight:500;font-size:15px;color:#A9A1A3;padding:0 0 14px}
+.tabela-suporte th:last-child{color:var(--rosa-claro)}
+.tabela-suporte td{padding:20px 0;border-top:1px solid var(--linha-escura);vertical-align:top;font-size:17px}
+.tabela-suporte td:first-child{width:22%;font-weight:500;padding-right:20px}
+.tabela-suporte td:nth-child(2){width:33%;color:#A9A1A3;padding-right:28px}
+.tabela-suporte td:last-child{color:#fff}
+.tabela-suporte td:last-child::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--magenta);box-shadow:0 0 8px var(--magenta);margin-right:12px;vertical-align:2px}
+
+/* projeto */
+.galeria{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,820px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px var(--gutter) 24px;margin-top:48px;scrollbar-width:thin;scrollbar-color:var(--magenta) transparent}
+.galeria figure{scroll-snap-align:center}
+.galeria img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--raio)}
+.galeria figcaption{font-size:15px;color:#BDB5B7;margin-top:12px}
+.galeria-nav{display:flex;gap:10px}
+.galeria-nav button{all:unset;cursor:pointer;width:48px;height:48px;border-radius:50%;border:1.5px solid #5A5254;display:grid;place-items:center;color:#fff}
+.galeria-nav button:hover{border-color:var(--magenta)}
+.galeria-nav svg{width:20px;height:20px}
+.titulo-com-nav{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+
+/* perfil */
+.perfil{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;margin-top:48px;border-top:1px solid #E2D8DC}
+.perfil div{padding:26px 0;border-bottom:1px solid #E2D8DC}
+.perfil h3{font-size:20px}
+.perfil p{color:var(--pedra);margin-top:6px;font-size:17px}
+
+/* processo */
+.passos{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(5,1fr);gap:36px 24px;margin-top:56px}
+.passos li{counter-increment:p;position:relative;padding-top:56px;font-size:17px;line-height:1.4}
+.passos li::before{content:counter(p,decimal-leading-zero);position:absolute;top:0;left:0;font-size:30px;font-weight:300;color:var(--magenta-texto)}
+.passos li::after{content:"";position:absolute;top:20px;left:52px;right:-12px;height:1px;background:#E2D8DC}
+.passos li:nth-child(5n)::after,.passos li:last-child::after{display:none}
+.passos small{display:block;color:var(--pedra);font-size:15px;margin-top:4px}
+
+/* faq */
+.faq{margin-top:48px;border-top:1px solid #E2D8DC;max-width:860px}
+.faq details{border-bottom:1px solid #E2D8DC}
+.faq summary{cursor:pointer;list-style:none;padding:24px 44px 24px 0;font-size:20px;font-weight:500;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;border-right:2px solid var(--magenta-texto);border-bottom:2px solid var(--magenta-texto);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq details p{padding:0 0 24px;color:var(--pedra);max-width:68ch}
+
+/* cta final */
+.final{overflow:hidden;text-align:left}
+.final .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(40px,7vw,96px);align-items:center}
+.final .arco{aspect-ratio:3/4;max-width:380px;justify-self:end;width:100%;box-shadow:0 0 0 1.5px rgba(234,10,140,.55),0 0 60px rgba(234,10,140,.28)}
+.contatos{list-style:none;display:grid;gap:4px;margin-top:40px}
+.contatos a{display:inline-flex;align-items:center;gap:14px;text-decoration:none;font-size:19px;padding:8px 0}
+.contatos a:hover{color:var(--rosa-claro)}
+.contatos svg{width:22px;height:22px;stroke:var(--magenta);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* rodapé */
+footer{background:#1A1718;color:#A9A1A3;padding:56px 0 40px;font-size:14px;line-height:1.55}
+footer h2{font-size:16px;font-weight:500;color:#E9E3E5;margin-bottom:12px;max-width:none}
+footer ol{padding-left:20px;display:grid;gap:6px}
+footer a{color:#E9E3E5}
+footer .aviso{margin-top:28px;padding-top:24px;border-top:1px solid #332D2F;max-width:90ch}
+footer .base{margin-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* responsivo */
+@media (max-width:980px){
+  .hero .wrap,.grade-2,.validacao .wrap,.quem .wrap,.receitas,.sim,.final .wrap{grid-template-columns:1fr}
+  .hero{padding-top:104px}
+  .hero .arco{max-width:420px;aspect-ratio:4/4.4;order:-1;justify-self:start;width:78%}
+  .hero .logo{display:none}
+  .formatos{grid-template-columns:1fr}
+  .passos{grid-template-columns:repeat(2,1fr)}
+  .passos li::after{display:none}
+  .quem .arco{max-width:420px}
+  .final .arco{justify-self:start;max-width:320px}
+  .selo{max-width:280px}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .topo .marca span{display:none}
+  .fatos{grid-template-columns:1fr;gap:16px}
+  .comparativo .linha{grid-template-columns:1fr;gap:8px;padding:22px 0}
+  .comparativo .cabeca{display:none}
+  .comparativo .dor::before{content:"Antes: ";text-decoration:none;display:inline}
+  .valores{grid-template-columns:1fr;gap:20px}
+  .prateleira{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .perfil{grid-template-columns:1fr}
+  .passos{grid-template-columns:1fr;gap:28px}
+  .passos li{padding:0 0 0 58px}
+  .tabela-suporte thead{display:none}
+  .tabela-suporte tr{display:grid;gap:6px;padding:20px 0;border-top:1px solid var(--linha-escura)}
+  .tabela-suporte td{border:0;padding:0;width:auto!important}
+  .tabela-suporte td:nth-child(2)::before{content:"Por conta própria: "}
+  .acoes .btn{width:100%;justify-content:center}
+  .seletor{display:grid;width:100%}
+  .seletor button{text-align:center;padding:11px 8px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero h1 .riscado::after{animation:none;transform:scaleX(1)}
+}
+@media print{.topo,.galeria-nav{display:none}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="The Hair Bar Escovaria — início">
+      <img src="favicon.png" alt="" width="40" height="40">
+      <span>Franquias The Hair Bar</span>
+    </a>
+    <a class="btn btn-primario" data-wa href="https://wa.me/5511920915958">Quero ser franqueado</a>
+  </div>
+  <div class="progresso" id="progresso"></div>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="hero escuro" id="inicio">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="img/logo.webp" alt="The Hair Bar Escovaria" width="848" height="604">
+      <h1>Um negócio de beleza sem <span class="riscado">hora marcada</span>.</h1>
+      <p class="lead">The Hair Bar Escovaria é uma franquia de beleza express: atendimento sem agendamento, preço fixo e um bar dentro do salão. Um modelo feito para quem quer empreender em beleza com gestão, processo e marca.</p>
+      <div class="acoes">
+        <a class="btn btn-primario" data-wa href="https://wa.me/5511920915958">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5.5 5.5l1.2-1.4-1.9-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-1.9z"/></svg>
+          Falar com a expansão
+        </a>
+        <a class="btn btn-linha" href="#formatos">Ver os números</a>
+      </div>
+      <dl class="fatos">
+        <div><dt>Investimento a partir de</dt><dd>R$ 279 mil</dd></div>
+        <div><dt>Lucratividade</dt><dd>13% a 25%</dd></div>
+        <div><dt>Payback a partir de</dt><dd>13 meses</dd></div>
+      </dl>
+    </div>
+    <div class="arco"><img src="img/neon.webp" alt="Portal neon com o letreiro The Hair Bar e sofá na recepção de uma unidade" width="1400" height="2104" fetchpriority="high"></div>
+  </div>
+</section>
+
+<!-- 2. MERCADO -->
+<section class="nevoa" id="mercado">
+  <div class="wrap grade-2">
+    <div>
+      <h2>Beleza é um mercado gigante. E as franquias do setor crescem acima da média.</h2>
+      <p class="lead">O brasileiro não abre mão de se cuidar. Isso faz da beleza um dos setores mais consistentes da economia, e do franchising de beleza um dos que mais crescem.</p>
+      <div class="barras" role="img" aria-label="Crescimento do faturamento em 2025: franchising total 10,5%; segmento Saúde, Beleza e Bem-estar 14,6%">
+        <h3>Crescimento do faturamento em 2025<sup><a href="#f2">2</a></sup></h3>
+        <div class="barra"><span>Franchising brasileiro (todos os segmentos)</span><b>+10,5%</b><span class="trilho"><i style="width:72%"></i></span></div>
+        <div class="barra destaque"><span>Saúde, Beleza e Bem-estar</span><b>+14,6%</b><span class="trilho"><i style="width:100%"></i></span></div>
+      </div>
+    </div>
+    <div class="numeros">
+      <div class="numero"><strong>R$ 175 bi</strong><p>movimentados pelo mercado de beleza no Brasil em 2025, alta de 6,8% sobre 2024. É o 3º maior mercado consumidor de beleza do mundo, atrás apenas de EUA e China.<sup><a href="#f1">1</a></sup></p></div>
+      <div class="numero"><strong>R$ 74,3 bi</strong><p>faturados pelas franquias de Saúde, Beleza e Bem-estar em 2025, o 2º segmento que mais cresceu no franchising brasileiro.<sup><a href="#f3">3</a></sup></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CONCORRÊNCIA -->
+<section class="escuro" id="concorrencia">
+  <div class="wrap grade-2">
+    <div>
+      <h2>Todo dia abrem 646 negócios de beleza no Brasil.</h2>
+      <p class="lead">Foram cerca de 236 mil novos negócios em 2025, 18,5% a mais que no ano anterior. Mas 94% deles são MEI: pequenos, sem marca, sem padrão e com preço definido no improviso.<sup><a href="#f4">4</a></sup></p>
+      <p class="conclusao">Há muita oferta e pouca estrutura. Uma marca com processo, preço fixo e experiência própria joga em outra liga.</p>
+    </div>
+    <div>
+      <div class="waffle" role="img" aria-label="De cada 100 novos negócios de beleza em 2025: 94 MEI, 5 microempresas e 1 empresa de pequeno porte">
+        <!-- 94 MEI, 5 ME, 1 EPP -->
+      </div>
+      <div class="legenda" aria-hidden="true"><span>94 MEI</span><span class="me">5 microempresas</span><span class="epp">1 empresa de pequeno porte</span></div>
+      <p class="nota" style="margin-top:14px">De cada 100 negócios de beleza abertos em 2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. DORES x MODELO -->
+<section id="modelo">
+  <div class="wrap">
+    <h2>O que trava o salão tradicional, e como o modelo The Hair Bar resolve</h2>
+    <p class="lead">Quatro escolhas de modelo de negócio tiram do caminho os problemas que mais pesam no caixa e na rotina do dono de salão.</p>
+    <div class="comparativo">
+      <div class="linha cabeca"><span>No salão tradicional</span><span>Na The Hair Bar</span></div>
+      <div class="linha"><span class="dor">Agenda com buracos, atrasos e clientes que faltam</span><div class="resposta"><strong>Sem agendamento</strong>A cliente chega e é atendida. O fluxo de atendimento é contínuo, sem horário perdido.</div></div>
+      <div class="linha"><span class="dor">Preço negociado a cada atendimento</span><div class="resposta"><strong>Preço fixo</strong>Tabela clara para a cliente e ticket previsível para você. Transparência é um dos valores da marca.</div></div>
+      <div class="linha"><span class="dor">Serviços longos que prendem a cadeira por horas</span><div class="resposta"><strong>Serviços express</strong>Escova, make, manicure, penteado, sobrancelhas e unhas de gel: rápidos, padronizados e com alta recorrência.</div></div>
+      <div class="linha"><span class="dor">Negócio que depende de um profissional estrela</span><div class="resposta"><strong>Processo de rede</strong>Manuais, Universidade Corporativa e treinamento inicial: a qualidade está no método, não em uma pessoa.</div></div>
+      <div class="linha"><span class="dor">Difícil se diferenciar de quem cobra menos</span><div class="resposta"><strong>Experiência bistrô</strong>Um bar dentro do salão. A cliente relaxa com um drink enquanto é atendida, e o salão vira lugar de visita, não só de serviço.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. VALIDAÇÃO -->
+<section class="escuro validacao" id="validacao">
+  <div class="wrap">
+    <div class="selo" role="img" aria-label="Mais de 200 unidades"><strong>200+</strong><span>unidades de escovaria<br>em uma única rede nos EUA</span></div>
+    <div>
+      <h2>O formato de escovaria já provou que escala.</h2>
+      <p class="lead">Nos Estados Unidos, a Drybar, rede de escovas sem corte e sem coloração, passou de 200 unidades em 2025 e inaugurou 28 só naquele ano.<sup><a href="#f5">5</a></sup> A The Hair Bar traz o conceito para o Brasil com mais serviços express, preço fixo e o bar como diferencial.</p>
+      <p class="nota" style="margin-top:20px">A Drybar não tem relação com a The Hair Bar. É citada aqui apenas como referência de mercado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. QUEM -->
+<section class="quem" id="marca">
+  <div class="wrap">
+    <div class="arco"><img src="img/salao-recepcao.webp" alt="Recepção de uma unidade The Hair Bar com portal neon, balcão e cadeiras de atendimento" width="1200" height="799" loading="lazy"></div>
+    <div>
+      <h2>Uma marca criada por uma empreendedora, para mulheres que não têm tempo a perder</h2>
+      <p class="lead">A The Hair Bar nasceu do sonho de Susana Nóbrega: advogada, empresária, triatleta e mãe. Ela buscava um lugar com estilo, qualidade e respeito ao tempo da cliente. Criou um salão com conceito de bar, onde a beleza encontra inovação e hospitalidade.</p>
+      <div class="valores">
+        <div><h3>Excelência</h3><p>Padrão alto em todos os serviços, em todas as unidades.</p></div>
+        <div><h3>Transparência</h3><p>Preços fixos para gerar confiança e previsibilidade.</p></div>
+        <div><h3>Hospitalidade</h3><p>Um ambiente acolhedor, onde a cliente se sente especial.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. RECEITAS -->
+<section class="nevoa" id="receitas">
+  <div class="wrap">
+    <h2>Mais de uma fonte de receita na mesma loja</h2>
+    <p class="lead">Serviços de giro rápido, linha de produtos própria e, no formato Premium, depilação a laser. Tudo sob uma marca só.</p>
+    <div class="receitas">
+      <div>
+        <h3>Serviços express</h3>
+        <ul class="servicos" style="margin-top:16px">
+          <li>Escova <small>carro-chefe</small></li>
+          <li>Make</li>
+          <li>Manicure e unhas de gel</li>
+          <li>Penteado</li>
+          <li>Sobrancelhas</li>
+          <li>Depilação a laser <small>formato Premium</small></li>
+        </ul>
+      </div>
+      <div class="produtos">
+        <h3>Linha própria Easy Style</h3>
+        <p>Produtos com a marca The Hair Bar para venda no balcão: a cliente leva para casa o cuidado que recebeu no salão.</p>
+        <div class="prateleira">
+          <figure><img src="img/prod3.webp" alt="" loading="lazy"><figcaption>Shampoo</figcaption></figure>
+          <figure><img src="img/prod1.webp" alt="" loading="lazy"><figcaption>Leave-in</figcaption></figure>
+          <figure><img class="p-sm" src="img/prod2.webp" alt="" loading="lazy"><figcaption>Máscara líquida</figcaption></figure>
+          <figure><img class="p-sm" src="img/prod4.webp" alt="" loading="lazy"><figcaption>Sérum protetor térmico</figcaption></figure>
+          <figure><img class="p-sm" src="img/prod6.webp" alt="" loading="lazy"><figcaption>Óleo nutritivo</figcaption></figure>
+          <figure><img class="p-sm" src="img/prod5.webp" alt="" loading="lazy"><figcaption>Perfume capilar</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FORMATOS -->
+<section class="escuro" id="formatos">
+  <div class="wrap">
+    <h2>Três formatos para o seu momento de investimento</h2>
+    <p class="lead">Todos com serviços express e venda de produtos. Escolha pelo capital disponível e pelo ponto que você tem em vista.<sup><a href="#f6">6</a></sup></p>
+    <div class="formatos">
+      <article class="formato">
+        <span class="tag">Menor investimento de entrada</span>
+        <h3>Smart</h3><p class="area">50 m²</p>
+        <dl>
+          <div><dt>Taxa de franquia</dt><dd>R$ 40 mil</dd></div>
+          <div><dt>Investimento total</dt><dd>R$ 279 mil</dd></div>
+          <div><dt>Faturamento mensal</dt><dd>R$ 89 mil</dd></div>
+          <div><dt>Lucratividade</dt><dd>13%</dd></div>
+          <div><dt>Payback</dt><dd>18 a 29 meses</dd></div>
+        </dl>
+        <p class="inclui">Serviços express e venda de produtos.</p>
+        <a class="btn btn-linha" data-wa data-unidade="Smart" href="https://wa.me/5511920915958">Quero a Smart</a>
+      </article>
+      <article class="formato recomendado">
+        <span class="tag">Retorno mais rápido</span>
+        <h3>Deluxe</h3><p class="area">100 m²</p>
+        <dl>
+          <div><dt>Taxa de franquia</dt><dd>R$ 80 mil</dd></div>
+          <div><dt>Investimento total</dt><dd>R$ 459 mil</dd></div>
+          <div><dt>Faturamento mensal</dt><dd>R$ 155 mil</dd></div>
+          <div><dt>Lucratividade</dt><dd>21%</dd></div>
+          <div><dt>Payback</dt><dd>13 a 18 meses</dd></div>
+        </dl>
+        <p class="inclui">Serviços express e venda de produtos.</p>
+        <a class="btn btn-primario" data-wa data-unidade="Deluxe" href="https://wa.me/5511920915958">Quero a Deluxe</a>
+      </article>
+      <article class="formato">
+        <span class="tag">Maior lucratividade</span>
+        <h3>Premium</h3><p class="area">100 a 120 m²</p>
+        <dl>
+          <div><dt>Taxa de franquia</dt><dd>R$ 120 mil</dd></div>
+          <div><dt>Investimento total</dt><dd>R$ 563 mil</dd></div>
+          <div><dt>Faturamento mensal</dt><dd>R$ 202 mil</dd></div>
+          <div><dt>Lucratividade</dt><dd>25%</dd></div>
+          <div><dt>Payback</dt><dd>15 a 19 meses</dd></div>
+        </dl>
+        <p class="inclui">Serviços express, depilação a laser e venda de produtos.</p>
+        <a class="btn btn-linha" data-wa data-unidade="Premium" href="https://wa.me/5511920915958">Quero a Premium</a>
+      </article>
+    </div>
+    <p class="nota" style="margin-top:28px">Royalties de 7% sobre o faturamento bruto. Valores do plano de negócio da franqueadora; veja o aviso no fim da página.</p>
+  </div>
+</section>
+
+<!-- 9. SIMULADOR -->
+<section class="nevoa" id="simulador">
+  <div class="wrap">
+    <h2>Simule o resultado da sua unidade</h2>
+    <p class="lead">Escolha o formato e ajuste o faturamento mensal para ver o lucro estimado com a lucratividade do plano de negócio.</p>
+    <div class="sim">
+      <div>
+        <div class="seletor" role="group" aria-label="Formato da unidade">
+          <button type="button" data-u="smart" aria-pressed="false">Smart</button>
+          <button type="button" data-u="deluxe" aria-pressed="true">Deluxe</button>
+          <button type="button" data-u="premium" aria-pressed="false">Premium</button>
+        </div>
+        <div class="controle">
+          <label for="fat">Faturamento mensal <output id="fatOut" for="fat">R$ 155 mil</output></label>
+          <input type="range" id="fat" min="50" max="130" step="5" value="100" aria-describedby="fatEsc">
+          <div class="escala" id="fatEsc"><span>50% do plano</span><span>plano</span><span>130% do plano</span></div>
+        </div>
+        <p class="nota" style="margin-top:28px">O plano de negócio prevê faturamento mensal de R$ 89 mil (Smart), R$ 155 mil (Deluxe) e R$ 202 mil (Premium). Use o controle para testar cenários mais conservadores ou mais otimistas.</p>
+      </div>
+      <div class="resultado" aria-live="polite">
+        <div class="principal"><span>Lucro mensal estimado</span><strong id="lucroMes">R$ 32,6 mil</strong></div>
+        <dl>
+          <div><dt>Lucro estimado em 12 meses</dt><dd id="lucroAno">R$ 390,6 mil</dd></div>
+          <div><dt>Lucratividade do plano</dt><dd id="margem">21%</dd></div>
+          <div><dt>Royalties (7% do faturamento)</dt><dd id="royal">R$ 10,9 mil/mês</dd></div>
+          <div><dt>Investimento total</dt><dd id="invest">R$ 459 mil</dd></div>
+          <div><dt>Payback previsto no plano</dt><dd id="payback">13 a 18 meses</dd></div>
+        </dl>
+        <a class="btn btn-primario" id="simCta" data-wa data-unidade="Deluxe" href="https://wa.me/5511920915958">Conversar sobre a Deluxe</a>
+      </div>
+    </div>
+    <p class="nota" style="margin-top:24px">Simulação ilustrativa: lucro = faturamento × lucratividade do plano. Não considera período de maturação da loja e não é promessa de resultado.</p>
+  </div>
+</section>
+
+<!-- 10. SUPORTE -->
+<section class="escuro" id="suporte">
+  <div class="wrap">
+    <h2>Você não começa do zero</h2>
+    <p class="lead">Abrir um salão sozinho é resolver tudo na tentativa e erro. Na rede, cada etapa já tem método e alguém do seu lado.</p>
+    <table class="tabela-suporte">
+      <thead><tr><th scope="col">Etapa</th><th scope="col">Por conta própria</th><th scope="col">Com a The Hair Bar</th></tr></thead>
+      <tbody>
+        <tr><td>Ponto comercial</td><td>Você pesquisa e negocia sozinho</td><td>Apoio para escolha e negociação do ponto comercial</td></tr>
+        <tr><td>Projeto da loja</td><td>Contratar arquiteto e criar identidade</td><td>Projeto arquitetônico padrão, pronto para executar</td></tr>
+        <tr><td>Equipe</td><td>Treinar cada profissional do zero</td><td>Universidade Corporativa e treinamento inicial</td></tr>
+        <tr><td>Operação</td><td>Processos criados na prática</td><td>Manuais com o padrão de cada serviço</td></tr>
+        <tr><td>Gestão</td><td>Planilhas e controles improvisados</td><td>Sistema de gestão avançado</td></tr>
+        <tr><td>Clientes</td><td>Divulgação feita por conta própria</td><td>Marketing digital da rede</td></tr>
+        <tr><td>Compras</td><td>Preço de pequeno comprador</td><td>Compras em rede</td></tr>
+        <tr><td>Acompanhamento</td><td>Decisões tomadas sozinho</td><td>Consultoria de campo</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 11. PROJETO -->
+<section class="escuro" id="projeto" style="padding-top:0">
+  <div class="wrap titulo-com-nav">
+    <div>
+      <h2>Uma loja que chama a atenção da calçada ao lavabo</h2>
+      <p class="lead">O projeto arquitetônico padrão leva o neon, as curvas e o contraste preto e branco da marca para cada unidade.</p>
+    </div>
+    <div class="galeria-nav">
+      <button type="button" id="galAnt" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button type="button" id="galProx" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+  <div class="galeria" id="galeria" tabindex="0" aria-label="Imagens do projeto arquitetônico">
+    <figure><img src="img/projeto-fachada.webp" alt="Fachada noturna com letreiro The Hair Bar Escovaria e toldo preto" loading="lazy" width="1280" height="720"><figcaption>Fachada com letreiro iluminado</figcaption></figure>
+    <figure><img src="img/projeto-recepcao.webp" alt="Recepção com portal neon magenta e sofá" loading="lazy" width="1600" height="900"><figcaption>Recepção com portal neon</figcaption></figure>
+    <figure><img src="img/projeto-corredor.webp" alt="Balcão branco com curva preta e corredor de atendimento" loading="lazy" width="1600" height="900"><figcaption>Balcão e corredor de atendimento</figcaption></figure>
+    <figure><img src="img/projeto-salao.webp" alt="Salão com espelhos iluminados, cadeiras e lavatórios" loading="lazy" width="1600" height="900"><figcaption>Salão e lavatórios</figcaption></figure>
+    <figure><img src="img/projeto-espera.webp" alt="Sala de espera com poltronas pretas e quadros" loading="lazy" width="1600" height="900"><figcaption>Sala de espera</figcaption></figure>
+    <figure><img src="img/projeto-lavabo.webp" alt="Lavabo com espelho arredondado e portas com curvas" loading="lazy" width="1280" height="720"><figcaption>Lavabo</figcaption></figure>
+    <figure><img src="img/salao-cadeiras.webp" alt="Salão em operação com cadeiras pretas e flores" loading="lazy" width="1600" height="1065"><figcaption>Unidade em operação</figcaption></figure>
+  </div>
+</section>
+
+<!-- 12. PERFIL -->
+<section id="perfil">
+  <div class="wrap">
+    <h2>Feito para quem pensa como empresário</h2>
+    <p class="lead">A The Hair Bar é um negócio de gestão. Se você se reconhece aqui, vale a conversa.</p>
+    <div class="perfil">
+      <div><h3>Quer entrar no mercado de beleza com marca</h3><p>Em vez de disputar preço com milhares de salões sem padrão.</p></div>
+      <div><h3>Valoriza previsibilidade</h3><p>Preço fixo, serviços padronizados e números de referência desde o primeiro dia.</p></div>
+      <div><h3>Gosta de liderar pessoas e processos</h3><p>O método vem da rede. A sua parte é fazer a loja rodar com excelência.</p></div>
+      <div><h3>Acredita em experiência como diferencial</h3><p>Um ambiente que a cliente quer visitar, com bar, neon e hospitalidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13. PROCESSO -->
+<section class="nevoa" id="processo">
+  <div class="wrap">
+    <h2>Do primeiro contato à inauguração</h2>
+    <p class="lead">Um processo claro, em dez etapas, para você saber exatamente o que vem a seguir.</p>
+    <ol class="passos">
+      <li>Apresentação da franquia</li>
+      <li>Formulário de pré-qualificação</li>
+      <li>Avaliação do perfil</li>
+      <li>Entrega da COF<small>Circular de Oferta de Franquia</small></li>
+      <li>Pré-contrato e pagamento da taxa de franquia</li>
+      <li>Definição do ponto</li>
+      <li>Abertura do CNPJ</li>
+      <li>Assinatura dos contratos de franquia e de aluguel</li>
+      <li>Treinamento inicial</li>
+      <li>Implantação e inauguração</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 14. FAQ -->
+<section id="duvidas">
+  <div class="wrap">
+    <h2>Perguntas que todo investidor faz</h2>
+    <div class="faq">
+      <details><summary>Quanto preciso investir?</summary><p>O investimento total vai de R$ 279 mil (Smart, 50 m²) a R$ 563 mil (Premium, 100 a 120 m²). A taxa de franquia, já incluída nesse total, é de R$ 40 mil, R$ 80 mil ou R$ 120 mil, conforme o formato.</p></details>
+      <details><summary>Quais são as taxas depois da abertura?</summary><p>Royalties de 7% sobre o faturamento bruto. As condições completas estão na Circular de Oferta de Franquia (COF), entregue na etapa 4 do processo.</p></details>
+      <details><summary>Em quanto tempo o investimento retorna?</summary><p>O plano de negócio prevê payback de 13 a 18 meses na Deluxe, 15 a 19 meses na Premium e 18 a 29 meses na Smart. O prazo real depende do ponto, da praça e da gestão da unidade.</p></details>
+      <details><summary>Qual formato faz mais sentido para mim?</summary><p>A Smart tem a menor entrada. A Deluxe tem o payback mais curto do plano. A Premium tem a maior lucratividade e inclui depilação a laser. A equipe de expansão ajuda a escolher conforme seu capital e o ponto disponível.</p></details>
+      <details><summary>Que apoio recebo da franqueadora?</summary><p>Apoio na escolha e negociação do ponto, projeto arquitetônico padrão, Universidade Corporativa, manuais, consultoria de campo, marketing digital, sistema de gestão e compras em rede.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 15. CTA FINAL -->
+<section class="escuro final" id="contato">
+  <div class="wrap">
+    <div>
+      <h2>Sua unidade The Hair Bar começa com uma conversa</h2>
+      <p class="lead">Fale com a equipe de expansão, tire suas dúvidas e receba a apresentação completa do formato que combina com você.</p>
+      <div class="acoes">
+        <a class="btn btn-primario" data-wa href="https://wa.me/5511920915958">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 9.5c.3 2.2 2.3 4.4 5.5 5.5l1.2-1.4-1.9-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-1.9z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-linha" href="mailto:franquias@thehairbar.com.br?subject=Quero%20ser%20franqueado%20The%20Hair%20Bar">Enviar e-mail</a>
+      </div>
+      <ul class="contatos">
+        <li><a href="https://wa.me/5511920915958" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/></svg>(11) 92091-5958</a></li>
+        <li><a href="mailto:franquias@thehairbar.com.br"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>franquias@thehairbar.com.br</a></li>
+        <li><a href="https://www.instagram.com/thehairbaroficial/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>@thehairbaroficial</a></li>
+        <li><a href="https://www.thehairbar.com.br" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>www.thehairbar.com.br</a></li>
+      </ul>
+    </div>
+    <div class="arco"><img src="img/neon.webp" alt="" loading="lazy" width="1400" height="2104"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Fontes</h2>
+    <ol>
+      <li id="f1">Euromonitor International e ABIHPEC, dados de 2025. <a href="https://ohoje.com/2026/08/10/brasil-bate-r-175-bilhoes-no-mercado-de-beleza-e-setor-mira-novas-tendencias/" target="_blank" rel="noopener">O Hoje, ago/2026</a>.</li>
+      <li id="f2">ABF, Pesquisa de Desempenho do Franchising Brasileiro 2025. <a href="https://www.band.com.br/economia/noticias/franquias-superam-r-300-bilhoes-em-faturamento-no-brasil-em-2025-202603091224" target="_blank" rel="noopener">Band, mar/2026</a>.</li>
+      <li id="f3">ABF, segmento Saúde, Beleza e Bem-estar em 2025. <a href="https://monitormercantil.com.br/setor-de-saude-e-bem-estar-fatura-r-743-bi/" target="_blank" rel="noopener">Monitor Mercantil, abr/2026</a>.</li>
+      <li id="f4">Sebrae, novos negócios de beleza em 2025. <a href="https://agenciasebrae.com.br/cultura-empreendedora/a-cada-hora-27-negocios-de-beleza-sao-abertos-no-pais-crescimento-foi-de-185-em-2025/" target="_blank" rel="noopener">Agência Sebrae, jan/2026</a>.</li>
+      <li id="f5">Drybar, balanço de 2025. <a href="https://www.franchising.com/news/20260121_drybar_ranks_in_entrepreneurs_franchise_500_following_a_dynamic_2025.html" target="_blank" rel="noopener">Franchising.com, jan/2026</a>.</li>
+      <li id="f6">Plano de negócio The Hair Bar, apresentação de franquia.</li>
+    </ol>
+    <p class="aviso">Investimento, faturamento, lucratividade e payback são estimativas do plano de negócio da franqueadora e variam conforme praça, ponto e gestão. Não constituem promessa de resultado. As condições completas da franquia constam na Circular de Oferta de Franquia (COF), entregue conforme a Lei nº 13.966/2019.</p>
+    <div class="base"><span>The Hair Bar Escovaria, apresentação de franquia 2026</span><a href="https://franquias-thehairbar.netlify.app/">Ver a apresentação institucional</a></div>
+  </div>
+</footer>
+
+<script>
+(()=>{
+  const WA='5511920915958';
+  const msg=u=>'Olá! Vi a apresentação de franquias The Hair Bar 2026 e quero saber mais'+(u?' sobre a unidade '+u:'')+'.';
+  const setWa=a=>{a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg(a.dataset.unidade));a.target='_blank';a.rel='noopener'};
+  document.querySelectorAll('[data-wa]').forEach(setWa);
+
+  // waffle 94/5/1
+  const w=document.querySelector('.waffle');
+  for(let i=0;i<100;i++){const d=document.createElement('i');if(i>=94&&i<99)d.className='me';if(i===99)d.className='epp';w.appendChild(d)}
+
+  // topo e progresso
+  const topo=document.getElementById('topo'),prog=document.getElementById('progresso');
+  const onScroll=()=>{const h=document.documentElement;topo.classList.toggle('solido',h.scrollTop>40);
+    prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'};
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // simulador
+  const U={smart:{n:'Smart',f:89,m:.13,i:279,p:'18 a 29 meses'},deluxe:{n:'Deluxe',f:155,m:.21,i:459,p:'13 a 18 meses'},premium:{n:'Premium',f:202,m:.25,i:563,p:'15 a 19 meses'}};
+  let atual='deluxe';
+  const fat=document.getElementById('fat'),$=id=>document.getElementById(id);
+  const mil=v=>'R$ '+v.toLocaleString('pt-BR',{maximumFractionDigits:1})+' mil';
+  const calc=()=>{const u=U[atual],f=u.f*fat.value/100,l=f*u.m;
+    $('fatOut').textContent=mil(Math.round(f*10)/10);
+    $('lucroMes').textContent=mil(Math.round(l*10)/10);
+    $('lucroAno').textContent=mil(Math.round(l*12*10)/10);
+    $('margem').textContent=Math.round(u.m*100)+'%';
+    $('royal').textContent=mil(Math.round(f*.07*10)/10)+'/mês';
+    $('invest').textContent=mil(u.i);
+    $('payback').textContent=u.p;
+    const c=$('simCta');c.dataset.unidade=u.n;c.textContent='Conversar sobre a '+u.n;setWa(c)};
+  document.querySelectorAll('.seletor button').forEach(b=>b.addEventListener('click',()=>{
+    atual=b.dataset.u;document.querySelectorAll('.seletor button').forEach(x=>x.setAttribute('aria-pressed',x===b));calc()}));
+  fat.addEventListener('input',calc);calc();
+
+  // galeria
+  const g=document.getElementById('galeria');
+  const passo=()=>g.querySelector('figure').getBoundingClientRect().width+20;
+  $('galAnt').onclick=()=>g.scrollBy({left:-passo(),behavior:'smooth'});
+  $('galProx').onclick=()=>g.scrollBy({left:passo(),behavior:'smooth'});
+
+  // navegação por seções no teclado (modo apresentação)
+  const S=[...document.querySelectorAll('main > section')];
+  addEventListener('keydown',e=>{
+    if(e.target.closest('input,textarea,select,summary,.galeria')||e.altKey||e.ctrlKey||e.metaKey)return;
+    if(!['ArrowRight','ArrowLeft','PageDown','PageUp'].includes(e.key))return;
+    const y=scrollY+90,idx=S.findIndex(s=>s.offsetTop+s.offsetHeight>y);
+    const dir=(e.key==='ArrowRight'||e.key==='PageDown')?1:-1;
+    const alvo=S[Math.max(0,Math.min(S.length-1,(idx<0?0:idx)+dir))];
+    e.preventDefault();scrollTo({top:alvo.offsetTop-(alvo.id==='inicio'?0:72),behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
